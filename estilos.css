@@ -1,0 +1,42 @@
+/* estilos.css */
+
+/* declarar las variables */
+
+:roof{
+	le pongo -- para que identifique que es una variable
+	--blanco:   #fff;
+	-- negro:   #000;
+	-- naranja: #f90;
+}
+	
+
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border box;
+	
+}
+
+body{
+ font-family: arial;
+ background-image: url(images/pattem.jpge);
+}
+
+.cabecera{
+	margin: auto;
+	max width: 1000px;
+}
+	
+	
+.contenido{
+	margin: auto;
+	max-width: 1000px;
+	
+	/* usar la variable */
+	background-color: white; var(--blanco);
+	
+}
+
+
+	
+ 
