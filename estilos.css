@@ -1,41 +1,178 @@
 /* estilos.css */
 
-/* declarar las variables */
-
-:roof{
-	le pongo -- para que identifique que es una variable
-	--blanco:   #fff;
-	-- negro:   #000;
-	-- naranja: #f90;
+/* 1° Declaro las variables
+	en la raíz de nuestro sitio para poder usarlas en cualquier lado.
+*/
+:root{
+	/* Le pongo -- para que identifique que es una variable */
+	--blanco:  #FFF;
+	--negro:   #000;
+	--naranja: #F90;
 }
-	
 
-{
+*{
 	margin: 0;
 	padding: 0;
-	box-sizing: border box;
-	
+	box-sizing: border-box;
 }
 
 body{
- font-family: arial;
- background-image: url(images/pattem.jpge);
+	font-family: arial;
+	background-image: url(images/pattern.jpg);
 }
 
-.cabecera{
-	margin: auto;
-	max width: 1000px;
-}
-	
-	
 .contenido{
 	margin: auto;
 	max-width: 1000px;
 	
-	/* usar la variable */
-	background-color: white; var(--blanco);
-	
+	/* 2° Usamos la variable
+		La agregamos entre var()
+	*/
+	background-color: var(--blanco);
+	border-radius: 8px 8px 0 0;
 }
+
+
+
+
+/*
+	-----------------------------
+	Cabecera
+	-----------------------------
+*/
+.cabecera{
+	margin: auto;
+	max-width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 8px;
+	margin-bottom: 15px;
+}
+.cabecera h1{
+	color: var(--naranja);
+}
+
+/*
+	-----------------------------
+	Botonera / Navegación
+	-----------------------------
+*/
+.nav{
+	background-color: var(--naranja);
+	border-radius: 8px 8px 0 0;
+	/*
+		1º top  y bottom
+		2º left y right
+	*/
+	padding: 10px 40px;
+	margin-bottom: 30px;
+}
+.nav-lista{
+	list-style-type: none;
+	display: flex;
+}
+.nav-lista a{
+	display: block;
+	color: var(--blanco);
+	text-decoration: none;
+	font-weight: bold;
+	padding: 7px 12px;
+	border-right: 1px solid var(--blanco);
+}
+.nav-lista a:hover{
+	text-decoration: underline;
+}
+
+
+
+
+/*                    					
+	-----------------------------
+	Slider / carrousel
+	-----------------------------
+*/
+.slider{
+	text-align: center;                                                      							
+	margin-bottom: 50px;     				
+}                                                                                                                                                  																					
+	
+	
+	.zona{
+		background-color: pink;
+		display: flex;   		
+	}		
+	
+																																																							
+	
+	
+	
+	.izq{                                 
+		background-color: red;
+		flex-grow: 1;
+		margin-right: 32px;	                                						
+	}
+	
+	                                 										
+	
+	.der {      
+	background-color: skyblue;   
+	flex-grow: 1;
+	width: 70%;
+	
+	display: grid;
+	/* fragment */
+	grid-template-columns: 1fr 1fr;	
+	grid-gap: 20px;
+	
+	}     
+
+.producto h2{
+	margin-bottom: 12px;
+}	
+	
+.produtco img{
+	float: left;
+	margin-right: 12px;
+}
+.produtco p{
+	float: left;
+	width: 50%;
+}
+
+
+
+	
+																											
+																										
+																													
+
+																																			                                                                |																														}																																																																																																																																																																																																																																																																																																																																																																			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	
